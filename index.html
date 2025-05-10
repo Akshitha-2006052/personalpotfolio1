@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+
+  <link rel="stylesheet" href="potfolio.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Porfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Gangishetti  Akshitha</span></h1>
+      <p>Web Developer | Designer | Dreamer</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+    <div class="hero-image">
+      <img src="picture2.jpg">
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+      I'm Gangishetti Akshitha I am from Devarakonda.I have completed my engineering from Sreenidhi Institute of Science and Technology.
+      My tecnical skills are I am frontend devolper and I am good at some programmimg languages like C,python,java.
+      I'm a creative web developer with a passion for building modern, responsive websites.
+      I love turning ideas into reality using code.
+    </p>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="project5.jpg">
+        <h3>Project One</h3>
+        <p>I have done a project on frontend development</p>
+      </div>
+      <div class="project-card">
+        <img src="portfolio3.jpg">
+        <h3>Project Two</h3>
+        <p>Another awesome project made machine learning and Artificial Intelligence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+<div class="social-icons">
+  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+<p>Email: akshithadheekshitha@gmail.com</p>
+
+  </section>
+
+  <footer>
+    <p>© 2025 YourName. Built with ❤</p>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    faders.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
